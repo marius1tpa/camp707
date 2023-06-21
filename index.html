@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Camp</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Adelia&display=swap" rel="stylesheet">
+</head>
+  <header>
+    <h1 class="heading">Bun Venit la Tabara "Zambetul"</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#registration">Registration</a></li>
+      <li><a href="#contact">Contact</a></li>
+ <li><a href="#testimonials">Testimonials</a></li>
+ <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Incepe-ti aventura verii!</h2>
+    <p>Ofera culoare copilariei tale impreuna cu noi.</p>
+    <a href="#registration" class="cta-button">Inregistrezate Acum</a>
+  </section>
+
+  <section id="activities">
+    <h2>Activitati</h2>
+    <div class="activity">
+      <img src="activity1.jpg" alt="Activity 1">
+      <h3>Outdoor Sports</h3>
+      <p>Engage in thrilling outdoor sports like soccer, basketball, and hiking.</p>
+    </div>
+    <div class="activity">
+      <img src="activity2.jpg" alt="Activity 2">
+      <h3>Arts and Crafts</h3>
+      <p>Unleash your creativity through various arts and crafts projects.</p>
+    </div>
+    <div class="activity">
+      <img src="activity3.jpg" alt="Activity 3">
+      <h3>Team Building</h3>
+      <p>Develop teamwork skills through fun and challenging team-building exercises.</p>
+    </div>
+  </section>
+
+ <section id="testimonials">
+    <h2>What Participants Say</h2>
+    <div class="testimonial">
+      <img src="avatar1.jpg" alt="Testimonial 1">
+      <p>"The summer camp was an amazing experience. I made lifelong friends and learned so much!"</p>
+      <h4>John Doe</h4>
+    </div>
+    <div class="testimonial">
+      <img src="avatar2.jpg" alt="Testimonial 2">
+      <p>"The activities were exciting, and the camp counselors were friendly and supportive."</p>
+      <h4>Jane Smith</h4>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photo">
+      <img src="gallery1.jpg" alt="Photo 1">
+    </div>
+    <div class="photo">
+      <img src="gallery2.jpg" alt="Photo 2">
+    </div>
+    <div class="photo">
+      <img src="gallery3.jpg" alt="Photo 3">
+    </div>
+  </section>
+
+  <section id="registration">
+    <h2>Register Now</h2>
+    <form action="submission.php" method="POST">
+      <input type="text" name="name" placeholder="Numele Tau" required>
+      <input type="number" name="age" placeholder="Varsta Ta" required>
+      <input type="email" name="email" placeholder="Email-ul Tau" required>
+      <textarea name="message" placeholder="Mesaj Adaugator" required></textarea>
+      <div class="round-selection">
+        <label for="round">Selecteaza Turul:</label>
+        <select name="round" id="round">
+          <option value="1">Turul 1 (23.06-03.07)</option>
+          <option value="2">Turul 2  (10.07-20.07)</option>
+          <option value="3">Turul 3  (27.07-07.08)</option>
+          <option value="4">Turul 4  (14.08-24.08)</option>
+    </select>
+  </div>
+      <button type="submit" id="submitButton" class="cta-button">Submit</button>
+    <p id="errorMessage"></p>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For any inquiries or additional information, feel free to contact us.</p>
+    <a href="mailto:info@summercamp.com" class="contact-link"><i class="fas fa-envelope"></i> info@summercamp.com</a>
+    <a href="tel:+123456789" class="contact-link"><i class="fas fa-phone"></i> +1 234 567 89</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Summer Camp. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
